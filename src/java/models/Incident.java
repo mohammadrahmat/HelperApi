@@ -11,6 +11,8 @@ public class Incident {
     private String description;
     private Date incidentTime;
     private Date lastUpdateTime;
+    
+    public Incident() {}
 
     public Incident(int incidentId, Coordinates location, IncidentStatus status,
             String description, Date incidentTime, Date lastUpdateTime) {
