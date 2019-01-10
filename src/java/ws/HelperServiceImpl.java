@@ -5,13 +5,14 @@ import javax.jws.WebService;
 import models.Coordinates;
 import models.Incident;
 import models.ServiceResult;
+import operation.IncidentManager;
 
 @WebService(endpointInterface = "ws.IHelperService")
 public class HelperServiceImpl implements IHelperService {
 
     @Override
     public ServiceResult AddIncident(Incident i) {
-        return null;
+        return IncidentManager.AddIncident(i);
     }
 
     @Override

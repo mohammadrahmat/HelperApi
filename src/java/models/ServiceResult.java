@@ -5,7 +5,9 @@ public class ServiceResult {
     private boolean hasException;
     private String exceptionMessage;
     
-    public ServiceResult() {}
+    public ServiceResult() {
+        hasException = false;
+    }
 
     public ServiceResult(boolean flag, String message) {
         hasException = flag;
