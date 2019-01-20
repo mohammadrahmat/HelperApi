@@ -17,7 +17,7 @@ public interface IHelperService {
     public ServiceResult AddIncident(Incident i);
 
     @WebMethod
-    public ServiceResult UpdateIncidentStatus(Incident i, boolean status);
+    public ServiceResult UpdateIncidentStatus(int incidentId, boolean status);
 
     @WebMethod
     public List<Incident> GetActiveIncidentsByRadius(Coordinates location);

@@ -16,13 +16,13 @@ public class HelperServiceImpl implements IHelperService {
     }
 
     @Override
-    public ServiceResult UpdateIncidentStatus(Incident i, boolean status) {
-        return null;
+    public ServiceResult UpdateIncidentStatus(int incidentId, boolean status) {
+        return IncidentManager.UpdateIncidentStatus(incidentId, status);
     }
 
     @Override
     public List<Incident> GetActiveIncidentsByRadius(Coordinates location) {
-        return null;
+        return IncidentManager.GetActiveIncidentsByRadius(location);
     }
 
 }
